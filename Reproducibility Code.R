@@ -6,7 +6,7 @@ source('OptimalAlloc.R')
 ################################################################
 #     Reproducing manuscript results
 ################################################################
-#Section 6.1: Angrist experiment
+#Section 6.1: Angrist experiment from "Angrist J, Lang D, Oreopoulos P. Incentives and Services for College Achievement: Ev- idence from a Randomized Trial. American Economic Journal: Applied Economics. 2009 January;1(1):136-63."
 N.Ang = 1656
 Sj2.Ang <- c(1,1,1,1)
 #Shi is the standard deviation of each PO
@@ -23,7 +23,7 @@ optimal.nl.blk(Shi=Sj2.Ang.blk,Mh=c(Mh.Ang),K=2,method="A")
 optimal.nl.blk(Shi=Sj2.Ang.blk,Mh=c(Mh.Ang),K=2,method="D")
 optimal.nl.blk(Shi=Sj2.Ang.blk,Mh=c(Mh.Ang),K=2,method="E")
 
-#Section 6.2: Libgober experiment
+#Section 6.2: Libgober experiment from "Libgober B. Getting a Lawyer While Black: A Field Experiment. Lewis & Clark Law Review. 2020;24(1):53-108."
 #overall
 Sj2.Law <- sqrt(c(0.21,0.2,0.18,0.2,0.23,0.21,0.27,0.21))
 K=3
